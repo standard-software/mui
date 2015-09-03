@@ -23,6 +23,13 @@ namespace FirstFloor.ModernUI.App
         public MainWindow()
         {
             InitializeComponent();
+
+            TitleLinks.Add(new Presentation.Link { DisplayName = "home", Source = new Uri("/Pages/Introduction.xaml", UriKind.Relative) });
+            TitleLinks.Add(new Presentation.Link { DisplayName = "Layout", Source = new Uri("/Pages/LayoutWireframe.xaml", UriKind.Relative) });
+            TitleLinks.Add(new Presentation.Link { DisplayName = "Ctrl", Source = new Uri("/Pages/ControlsModern.xaml", UriKind.Relative) });
+            TitleLinks.Add(new Presentation.Link { DisplayName = "Adv", Source = new Uri("/Pages/Navigation.xaml", UriKind.Relative) });
+            TitleLinks.Add(new Presentation.Link { DisplayName = "Color", Source = new Uri("/Pages/Settings.xaml", UriKind.Relative) });
+            TitleLinks.Add(new Presentation.Link { DisplayName = "WEB", Source = new Uri("https://github.com/standard-software/mui", UriKind.Absolute) });
         }
     }
 }
